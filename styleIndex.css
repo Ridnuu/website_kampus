@@ -1,0 +1,239 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #0A2942; /* Warna teks utama */
+    font-size: 16px; /* Ukuran teks proporsional */
+    line-height: 1.6; /* Tinggi baris untuk kenyamanan */
+}
+
+/* Header Baru */
+.main-header {
+    background-color: #0A2942; /* Warna latar belakang header */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFC857; /* Warna teks header */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo img {
+    height: 60px; /* Ukuran logo */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFC857; /* Warna teks navigasi */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Warna teks saat hover */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+}
+
+
+#wrapper {
+    width: 70%; /* Ubah lebar menjadi lebih kecil */
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Menggabungkan garis antar sel */
+    margin-bottom: 20px;
+    font-size: 15px; /* Ukuran teks tabel */
+    border: 1px solid #000; /* Menambahkan garis luar pada tabel */
+}
+
+table th,
+table td {
+    text-align: center;
+    padding: 12px; /* Menambahkan ruang padding */
+    border: 1px solid #ddd; /* Garis pada setiap sel */
+}
+
+table th {
+    background-color: #0A2942; /* Warna header tabel */
+    color: #FFC857; /* Warna teks header tabel */
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #FFC8571A; /* Kuning keemasan transparan */
+}
+
+table tr:hover {
+    background-color: #FFC8574D; /* Kuning keemasan lebih gelap */
+}
+
+form {
+    margin-top: 20px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #0A2942; /* Warna heading */
+    font-size: 18px; /* Ukuran heading lebih besar */
+    text-align: center;
+}
+
+form table {
+    width: 100%;
+    border-collapse: separate; /* Tidak menggabungkan garis */
+    border-spacing: 0 10px; /* Memberi jarak antar baris */
+}
+
+form table td {
+    padding: 8px 0;
+    font-size: 15px;
+    text-align: left;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Radius lebih lembut */
+    font-size: 15px; /* Ukuran teks input */
+}
+
+form input[type="submit"] {
+    background-color: #FFC857; /* Warna tombol */
+    color: #0A2942; /* Warna teks tombol */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #FFC857D9; /* Warna tombol saat hover */
+}
+
+/* Input, Select, Textarea Styling */
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 12px; /* Lebar dan padding yang konsisten untuk semua input */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Pastikan padding tidak menambah ukuran elemen */
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+    border-color: #0A2942;
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #0A2942; /* Warna footer */
+    color: #FFC857; /* Warna teks footer */
+    border-radius: 0 0 8px 8px;
+    font-size: 14px; /* Ukuran teks footer lebih kecil */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Tombol Tambah Data */
+.btn-tambah {
+    display: inline-block;
+    background-color: #FFC857; /* Warna tombol (kuning keemasan) */
+    color: #0A2942; /* Warna teks tombol */
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px; /* Ukuran font tombol */
+    font-weight: bold;
+    border: 2px solid #0A2942; /* Garis tepi tombol */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    transition: all 0.3s ease; /* Animasi saat hover */
+}
+
+.btn-tambah:hover {
+    background-color: #0A2942; /* Warna tombol saat hover (biru tua) */
+    color: #FFC857; /* Warna teks saat hover */
+    border-color: #FFC857; /* Warna garis tepi saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+#about {
+    background-color: #ffc8571a;
+    border-radius: 8px;
+    padding: 40px 20px;
+    color: #0A2942;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+#about h2 {
+    color: #0A2942;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+#about li {
+    margin-bottom: 10px;
+}
